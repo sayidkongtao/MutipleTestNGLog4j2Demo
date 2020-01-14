@@ -1,0 +1,11 @@
+21:56:38.405 INFO  com.sayid.demo.BaseTest 13 setup - main1: setup -> BeforeSuite
+21:56:39.419 INFO  com.sayid.testcase.TestOne 16 testOne1 - main1: test1 -> 1
+21:56:40.420 INFO  com.sayid.testcase.TestOne 16 testOne1 - main1: test1 -> 1
+21:56:41.425 INFO  com.sayid.testcase.TestOne 16 testOne1 - main1: test1 -> 1
+21:56:42.427 INFO  com.sayid.testcase.TestOne 16 testOne1 - main1: test1 -> 1
+21:56:43.431 INFO  com.sayid.testcase.TestOne 16 testOne1 - main1: test1 -> 1
+21:56:44.434 INFO  com.sayid.testcase.TestOne 24 testOne2 - main1: test1 -> 2
+21:56:45.437 INFO  com.sayid.testcase.TestOne 24 testOne2 - main1: test1 -> 2
+21:56:46.443 INFO  com.sayid.testcase.TestOne 24 testOne2 - main1: test1 -> 2
+21:56:47.445 INFO  com.sayid.testcase.TestOne 24 testOne2 - main1: test1 -> 2
+21:56:48.450 INFO  com.sayid.testcase.TestOne 24 testOne2 - main1: test1 -> 2
