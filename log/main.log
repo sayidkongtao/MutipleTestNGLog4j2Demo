@@ -1,0 +1,8 @@
+2020-01-14 23:47:48,883 INFO  [main] demo.BaseTest - main1: setup -> BeforeSuite
+2020-01-14 23:57:36,366 INFO  [main] demo.BaseTest - main1: setup -> BeforeSuite
+2020-01-15 00:08:57,391 INFO  [main] demo.BaseTest - main1: setup -> BeforeSuite
+2020-01-15 00:09:43,911 INFO  [main] testcase.TestOne - main1: test1 -> 1
+2020-01-15 00:09:49,435 INFO  [main] testcase.TestOne - main1: test1 -> 1
+2020-01-15 00:09:51,174 INFO  [main] testcase.TestOne - main1: test1 -> 1
+2020-01-15 00:09:54,904 INFO  [main] testcase.TestOne - main1: test1 -> 1
+2020-01-15 00:09:59,616 INFO  [main] testcase.TestOne - main1: test1 -> 1
