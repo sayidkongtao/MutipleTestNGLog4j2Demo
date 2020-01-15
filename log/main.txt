@@ -1,0 +1,1 @@
+2020-01-15 09:19:53,570 INFO  [main] demo.BaseTest - main1: setup -> BeforeSuite
