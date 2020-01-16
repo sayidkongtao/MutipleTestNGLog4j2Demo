@@ -1,13 +1,14 @@
 package com.sayid.testcase;
 
 import com.sayid.demo.BaseTest;
+import com.sayid.util.Utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 public class TestTwo extends BaseTest {
 
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final static Logger logger = Utils.getLogger(TestTwo.class);
 
     @Test
     public void testTwo1() throws InterruptedException {
