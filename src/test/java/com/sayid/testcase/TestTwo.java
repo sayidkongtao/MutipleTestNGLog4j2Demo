@@ -1,11 +1,13 @@
 package com.sayid.testcase;
 
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import com.sayid.demo.BaseTest;
 import com.sayid.util.Utils;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(ExtentITestListenerClassAdapter.class)
 public class TestTwo extends BaseTest {
 
     private final static Logger logger = Utils.getLogger(TestTwo.class);
