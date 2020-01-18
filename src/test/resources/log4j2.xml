@@ -8,7 +8,7 @@
 
             <PatternLayout
 
-                    pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%X{PID}] [%X{threadName}] %c{1} - %msg%n" />
+                    pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t-%X{PID}] [%X{threadName}] %c{1} - %msg%n" />
 
         </Console>
 

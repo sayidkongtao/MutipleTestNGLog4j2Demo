@@ -8,10 +8,11 @@ import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
 
-    private Logger logger = Utils.getLogger(this.getClass());
+    private Logger logger;
 
     @BeforeSuite
     public void setup(){
+        logger = Utils.getLogger(this.getClass());
         logger.info(Thread.currentThread().getName() + Thread.currentThread().getId() + ": setup -> BeforeSuite");
     }
 }
