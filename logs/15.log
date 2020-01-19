@@ -1,0 +1,15 @@
+[INFO ] 2020-01-19 18:30:09.948 [TestNG-15] com.sayid.testcase.TestTwo - Setup Before Class
+[INFO ] 2020-01-19 18:30:09.957 [TestNG-15] com.sayid.listener.CustomListener - [testTwo1 Start]
+[INFO ] 2020-01-19 18:30:10.961 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 3
+[INFO ] 2020-01-19 18:30:11.965 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 3
+[INFO ] 2020-01-19 18:30:12.970 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 3
+[INFO ] 2020-01-19 18:30:13.976 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 3
+[INFO ] 2020-01-19 18:30:14.980 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 3
+[INFO ] 2020-01-19 18:30:15.299 [TestNG-15] com.sayid.listener.CustomListener - [testTwo1 Success]
+[INFO ] 2020-01-19 18:30:15.300 [TestNG-15] com.sayid.listener.CustomListener - [testTwo2 Start]
+[INFO ] 2020-01-19 18:30:16.306 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 4
+[INFO ] 2020-01-19 18:30:17.309 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 4
+[INFO ] 2020-01-19 18:30:18.310 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 4
+[INFO ] 2020-01-19 18:30:19.312 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 4
+[INFO ] 2020-01-19 18:30:20.314 [TestNG-15] com.sayid.testcase.TestTwo - TestNG15: test1 -> 4
+[INFO ] 2020-01-19 18:30:20.315 [TestNG-15] com.sayid.listener.CustomListener - [testTwo2 Success]

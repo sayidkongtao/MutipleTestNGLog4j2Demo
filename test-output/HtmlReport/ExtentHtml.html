@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 17, 2020 12:15:06</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 19, 2020 18:30:09</span>
 			</a>
 		</ul>
 	</div>
@@ -99,11 +99,25 @@
 	</section>
 <div id='test-view-charts' class='subview-full'>
     <div id='charts-row' class='row nm-v nm-h'>
-        <div class='col s12 m6 l6 np-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Suites</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> suite(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> suite(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
             <div class='card-panel nm-v'>
                 <div class='left panel-name'>Tests</div>
                 <div class='chart-box' style="max-height:94px;">
-                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
@@ -113,17 +127,17 @@
                 </div>
             </div>
         </div>
-        <div class='col s12 m6 l6 np-h'>
+        <div class='col s12 m4 l4 np-h'>
             <div class='card-panel nm-v'>
-                <div class='left panel-name'>Steps</div>
+                <div class='left panel-name'>Test Methods</div>
                 <div class='chart-box' style="max-height:94px;">
-                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> method(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> method(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -143,22 +157,30 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>TestTwo</span>
-						<span class='test-time'>Jan 17, 2020 12:15:06</span>
+						<span class='test-name'>demo</span>
+						<span class='test-time'>Jan 19, 2020 18:30:09</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 17, 2020 12:15:06</span>
-	<span class='label end-time'>Jan 17, 2020 12:15:06</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Jan 19, 2020 18:30:09</span>
+	<span class='label end-time'>Jan 19, 2020 18:30:20</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+359ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+	<li class='node level-1  pass' status='pass' test-id='2'>
 		<div class='collapsible-header'>
-			<div class='node-name'>testTwo1</div>
-			<span class='node-time'>Jan 17, 2020 12:15:06</span>
-			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<div class='node-name'>TestOne</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 10s+359ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-2 leaf pass' status='pass' test-id='3'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testOne1</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 5s+342ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
 		<div class='collapsible-body'>
@@ -174,7 +196,7 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:15:11 PM</td>
+							<td class='timestamp'>6:30:15 PM</td>
 							<td class='step-details'>
 									Test passed
 								
@@ -185,11 +207,11 @@
 			</div>
 		</div>
 	</li>
-	<li class='node level-1 leaf pass' status='pass' test-id='5'>
+	<li class='node level-2 leaf pass' status='pass' test-id='4'>
 		<div class='collapsible-header'>
-			<div class='node-name'>testTwo2</div>
-			<span class='node-time'>Jan 17, 2020 12:15:11</span>
-			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<div class='node-name'>testOne2</div>
+			<span class='node-time'>Jan 19, 2020 18:30:15</span>
+			&middot; <span class='node-duration'>0h 0m 5s+15ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
 		<div class='collapsible-body'>
@@ -205,7 +227,7 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:15:16 PM</td>
+							<td class='timestamp'>6:30:20 PM</td>
 							<td class='step-details'>
 									Test passed
 								
@@ -215,28 +237,100 @@
 				</table>
 			</div>
 		</div>
+	</li>
+	<li class='node level-2 leaf pass' status='pass' test-id='10'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testOne1</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 5s+342ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>6:30:15 PM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+	<li class='node level-2 leaf pass' status='pass' test-id='11'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testOne2</div>
+			<span class='node-time'>Jan 19, 2020 18:30:15</span>
+			&middot; <span class='node-duration'>0h 0m 5s+15ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>6:30:20 PM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+		</ul>
 	</li>
 </ul>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>TestOne</span>
-						<span class='test-time'>Jan 17, 2020 12:15:06</span>
+						<span class='test-name'>demo</span>
+						<span class='test-time'>Jan 19, 2020 18:30:09</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 17, 2020 12:15:06</span>
-	<span class='label end-time'>Jan 17, 2020 12:15:06</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Jan 19, 2020 18:30:09</span>
+	<span class='label end-time'>Jan 19, 2020 18:30:20</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+359ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='4'>
+	<li class='node level-1  pass' status='pass' test-id='6'>
 		<div class='collapsible-header'>
-			<div class='node-name'>testOne1</div>
-			<span class='node-time'>Jan 17, 2020 12:15:06</span>
-			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<div class='node-name'>TestTwo</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 10s+359ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-2 leaf pass' status='pass' test-id='7'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testTwo1</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 5s+342ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
 		<div class='collapsible-body'>
@@ -252,7 +346,7 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:15:11 PM</td>
+							<td class='timestamp'>6:30:15 PM</td>
 							<td class='step-details'>
 									Test passed
 								
@@ -263,11 +357,11 @@
 			</div>
 		</div>
 	</li>
-	<li class='node level-1 leaf pass' status='pass' test-id='6'>
+	<li class='node level-2 leaf pass' status='pass' test-id='8'>
 		<div class='collapsible-header'>
-			<div class='node-name'>testOne2</div>
-			<span class='node-time'>Jan 17, 2020 12:15:11</span>
-			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<div class='node-name'>testTwo2</div>
+			<span class='node-time'>Jan 19, 2020 18:30:15</span>
+			&middot; <span class='node-duration'>0h 0m 5s+15ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
 		<div class='collapsible-body'>
@@ -283,7 +377,7 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:15:16 PM</td>
+							<td class='timestamp'>6:30:20 PM</td>
 							<td class='step-details'>
 									Test passed
 								
@@ -293,8 +387,100 @@
 				</table>
 			</div>
 		</div>
+	</li>
+	<li class='node level-2 leaf pass' status='pass' test-id='13'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testTwo1</div>
+			<span class='node-time'>Jan 19, 2020 18:30:09</span>
+			&middot; <span class='node-duration'>0h 0m 5s+342ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>6:30:15 PM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+	<li class='node level-2 leaf pass' status='pass' test-id='14'>
+		<div class='collapsible-header'>
+			<div class='node-name'>testTwo2</div>
+			<span class='node-time'>Jan 19, 2020 18:30:15</span>
+			&middot; <span class='node-duration'>0h 0m 5s+15ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>6:30:20 PM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+		</ul>
 	</li>
 </ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>demo</span>
+						<span class='test-time'>Jan 19, 2020 18:30:30</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 19, 2020 18:30:30</span>
+	<span class='label end-time'>Jan 19, 2020 18:30:30</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>demo</span>
+						<span class='test-time'>Jan 19, 2020 18:30:30</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 19, 2020 18:30:30</span>
+	<span class='label end-time'>Jan 19, 2020 18:30:30</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -324,32 +510,38 @@
 		<div class='row'>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Suites
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Tests
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
-					Steps
-					<div class='panel-lead'>4</div>
+					Test Methods
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 17, 2020 12:15:06</div>
+					<div class='panel-lead'>Jan 19, 2020 18:30:09</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 17, 2020 12:15:17</div>
+			 		<div class='panel-lead'>Jan 19, 2020 18:30:30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 11s+167ms</div>
+					<div class='panel-lead'>0h 0m 20s+925ms</div>
 				</div>
 			</div>
 		</div>
@@ -360,16 +552,16 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
-				passParent: 2,
+                parentCount: 4,
+				passParent: 4,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 4,
-				passChild: 4,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -378,8 +570,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 0,
-				passGrandChild: 0,
+				grandChildCount: 8,
+				passGrandChild: 8,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -392,7 +584,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "TestTwo":0,"TestOne":0
+			        "demo":10.359,"demo":10.359,"demo":0,"demo":0
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>

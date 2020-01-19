@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Configuration status="INFO">
-
     <Appenders>
-
+        <Routing name="MyRoutingAppender">
+            <Routes pattern="$${ctx:threadPID}">
+                <Route>
+                    <File fileName="logs/${ctx:threadPID}.log" name="appender-${ctx:threadPID}" append="false">
+                        <PatternLayout>
+                            <Pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t-%X{threadPID}] %class{36} - %msg%n</Pattern>
+                        </PatternLayout>
+                    </File>
+                </Route>
+            </Routes>
+        </Routing>
         <Console name="console" target="SYSTEM_OUT">
-
-            <PatternLayout
-
-                    pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t-%X{PID}] [%X{threadName}] %c{1} - %msg%n" />
-
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t-%X{threadPID}] %class{36} - %msg%n"/>
         </Console>
-
     </Appenders>
-
     <Loggers>
-
-        <Root level="debug" additivity="false">
-
+        <Root level="info" additivity="false">
             <AppenderRef ref="console" />
-
+            <AppenderRef ref="MyRoutingAppender" />
         </Root>
-
     </Loggers>
 
 </Configuration>
