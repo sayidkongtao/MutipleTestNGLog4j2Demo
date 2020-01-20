@@ -13,8 +13,4 @@
             <class name="com.sayid.testcase.TestTwo"/>
         </classes>
     </test>
-
-    <listeners>
-        <listener class-name="com.sayid.listener.CustomListener"></listener>
-    </listeners>
 </suite>

@@ -1,17 +1,19 @@
 package com.sayid.demo;
 
-import com.aventstack.extentreports.testng.listener.ExtentIReporterSuiteClassListenerAdapter;
+import com.sayid.listener.CustomListener;
 import com.sayid.util.Utils;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.ThreadContext;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
-@Listeners({ExtentIReporterSuiteClassListenerAdapter.class})
+@Listeners({CustomListener.class})
 public class BaseTest {
 
     private Logger logger;
+
+    static {
+        System.setProperty("log4j2.contextSelector", "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector");
+    }
 
     @BeforeSuite
     public void setup(){
